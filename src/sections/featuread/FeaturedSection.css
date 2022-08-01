@@ -1,0 +1,22 @@
+.FeaturedSection {
+  position: relative;
+  margin-bottom: 120px;
+}
+
+.selectCity button.dropdown-toggle {
+  height: 64px;
+  padding: 20px 24px;
+  background: #f2f2f2;
+  border-radius: 12px;
+  color: #656565;
+  width: auto;
+  border: 1px solid #f2f2f2;
+}
+
+.selectCity button.dropdown-toggle:hover {
+  background: #eaeaea;
+}
+
+.selectCity button.dropdown-toggle::after {
+  display: none;
+}

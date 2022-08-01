@@ -2,6 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import Header from "./components/header/Header";
 import BenefitSection from "./sections/benefit/BenefitSection";
+import FeaturedSection from "./sections/featuread/FeaturedSection";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Header />
       <main>
         <BenefitSection />
+        <FeaturedSection />
       </main>
     </div>
   );

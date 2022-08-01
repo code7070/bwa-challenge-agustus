@@ -1,0 +1,16 @@
+.btn.btn-warning.newWarning {
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  padding: 16px 28px;
+  height: 56px;
+  background: #fdc886;
+}
+
+.btn.btn-warning.newWarning.align-center {
+  margin: 0 auto;
+}
+
+.btn.btn-warning.newWarning .arrowRight {
+  padding-left: 10px;
+}

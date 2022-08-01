@@ -57,20 +57,22 @@ const BenefitCard = ({ title, description, icon, url }) => {
 
 export default function BenefitSection() {
   return (
-    <Container className="benefit__section">
-      <div className="benefit__head">
-        <HeadSection
-          title="Why Should Choose Us?"
-          subtitle="SPECIAL BENEFIT FOR YOU"
-        />
-      </div>
-      <div className="benefit__point">
-        <Row className="benefit__row">
-          {benefitList.map((item) => (
-            <BenefitCard key={item.title} {...item} />
-          ))}
-        </Row>
-      </div>
-    </Container>
+    <section className="benefit__section">
+      <Container>
+        <div className="benefit__head">
+          <HeadSection
+            title="Why Should Choose Us?"
+            subtitle="SPECIAL BENEFIT FOR YOU"
+          />
+        </div>
+        <div className="benefit__point">
+          <Row className="benefit__row">
+            {benefitList.map((item) => (
+              <BenefitCard key={item.title} {...item} />
+            ))}
+          </Row>
+        </div>
+      </Container>
+    </section>
   );
 }

@@ -1,4 +1,4 @@
-import Button from "../button/Button";
+import Button from "../button/ButtonGhostPurple";
 import SearchIcon from "../icons/SearchIcon";
 import "./FormSearch.css";
 
