@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  font-family: "Poppins", "Nunito" -apple-system, BlinkMacSystemFont, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* adjustment for project */
+  background-color: #fafafa;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/*  */
+/* DECLARING FONT-FACE NUNITO */
+
+@font-face {
+  font-family: "Nunito";
+  src: url("/public/fonts/Nunito/static/Nunito-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url("/public/fonts/Nunito/static/Nunito-Medium.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url("/public/fonts/Nunito/static/Nunito-SemiBold.ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url("/public/fonts/Nunito/static/Nunito-Bold.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Nunito";
+  src: url("/public/fonts/Nunito/static/Nunito-ExtraBold.ttf");
+  font-weight: 800;
+}
+
+/*  */
+/* DECLARING FONT-FACE POPPINS */
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/public/fonts/Poppins/Poppins-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/public/fonts/Poppins/Poppins-Medium.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/public/fonts/Poppins/Poppins-SemiBold.ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("/public/fonts/Poppins/Poppins-Bold.ttf");
+  font-weight: 700;
+}
+
+#root {
+  font-family: Poppins, Nunito, sans-serif;
+}
+
+.with-space {
+  padding: 60px;
+}

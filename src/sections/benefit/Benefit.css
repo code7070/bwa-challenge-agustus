@@ -1,0 +1,20 @@
+.headSection {
+  position: relative;
+  text-align: center;
+}
+
+.headSection * {
+  font-weight: 600;
+  font-family: "Poppins", Nunito, sans-serif;
+}
+
+.headSection .headSubtitle {
+  font-size: 16px;
+  color: #5a4fcf;
+  margin-bottom: 6px;
+}
+
+.headSection .headTitle {
+  font-size: 28px;
+  color: #232631;
+}

@@ -1,0 +1,33 @@
+.FormSearch {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.FormSearch .inputGroup {
+  position: relative;
+  background: #fff;
+  margin: 0 20px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 12px;
+  padding: 15px 28px;
+}
+
+.FormSearch .inputGroup input[type="search"] {
+  display: block;
+  background: #fff;
+  border: none;
+  outline: none;
+  min-width: 240px;
+  margin-left: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+
+.FormSearch .inputGroup svg,
+.FormSearch .inputGroup label {
+  display: block;
+}
