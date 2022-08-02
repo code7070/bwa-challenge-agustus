@@ -89,7 +89,7 @@ const RestoReservation = ({ data, mode }) => {
   let icon = <InfoIcon />;
   if (res.cost > 0) {
     cost = `IDR ${priceThousand(res.cost)}`;
-    icon = <FontAwesomeIcon icon={faMoneyBill1Wave} className="ml-2" />;
+    icon = <FontAwesomeIcon icon={faMoneyBill1Wave} />;
   }
   return (
     <Stack className="restoInfo__reservation">
