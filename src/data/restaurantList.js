@@ -130,6 +130,25 @@ const restaurantList = [
     },
     image: "pizza-summer.jpg",
   },
+  {
+    name: "Coffee Tree",
+    isAds: 1,
+    rating: "4.9",
+    reviewedBy: 4201,
+    price: {
+      bottom: 25000,
+      top: 119000,
+    },
+    location: {
+      city: "Jakarta",
+      country: "Indonesia",
+    },
+    reservation: {
+      available: true,
+      cost: 150000,
+    },
+    image: "coffee-tree.jpg",
+  },
 ];
 
 export default restaurantList;

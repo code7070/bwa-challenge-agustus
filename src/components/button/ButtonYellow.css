@@ -14,3 +14,7 @@
 .btn.btn-warning.newWarning .arrowRight {
   padding-left: 10px;
 }
+
+.btn.btn-warning.newWarning > * {
+  pointer-events: none;
+}

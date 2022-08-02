@@ -69,3 +69,19 @@
 .restoInfo.lean {
   opacity: 0;
 }
+
+.restoInfo.complete {
+  width: 390px;
+}
+
+.restoInfo.complete .restoInfo__next {
+  display: none;
+}
+
+.restoInfo .restoInfo__reservation {
+  margin-top: 34px;
+}
+
+.restoInfo .restoInfo__reservation-cost {
+  margin-top: 12px;
+}

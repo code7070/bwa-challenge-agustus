@@ -22,11 +22,11 @@
   position: absolute;
   left: 0;
   top: 50%;
-  transform: translate(0, -50%);
+  transform: translate(-25%, -50%);
   background: #fff;
-  padding: 24px;
   border-radius: 12px;
   opacity: 0;
+  transition: all 0.75s ease-in-out;
 }
 
 .AdsSection .swiper-slide.swiper-slide-active .ads__bgImg {
@@ -36,4 +36,5 @@
 
 .AdsSection .swiper-slide.swiper-slide-active .ads__restoInfo {
   opacity: 1;
+  transform: translate(0%, -50%);
 }

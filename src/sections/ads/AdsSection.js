@@ -14,7 +14,7 @@ export default function AdsSection() {
               <img alt={item.name} src={`/images/restaurant/${item.image}`} />
             </div>
             <div className="ads__restoInfo">
-              <RestoInfo data={item} mode="ads" />
+              <RestoInfo data={item} mode="complete" />
             </div>
           </SwiperSlide>
         ))}

@@ -17,3 +17,7 @@
 .btn-ghostPurple:focus {
   box-shadow: 0 1px 0 rgba(90, 79, 207, 10%), 1px 1px rgba(90, 79, 207, 10%);
 }
+
+.btn-ghostPurple > * {
+  pointer-events: none;
+}
