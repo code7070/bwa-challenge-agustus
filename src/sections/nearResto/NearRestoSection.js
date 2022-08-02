@@ -13,7 +13,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import ButtonYellow from "../../components/button/ButtonYellow";
 import HeadSection from "../../components/headSection/HeadSection";
-import "./FeaturedSection.css";
+import "./NearRestoSection.css";
 import { useEffect, useState } from "react";
 import RestoCard from "../../components/restoCard/RestoCard";
 import restaurantList from "../../data/restaurantList";
@@ -28,7 +28,7 @@ const CardLoading = () => {
   );
 };
 
-export default function FeaturedSection() {
+export default function NearRestoSection() {
   const [city, setCity] = useState("Jakarta, Indonesia");
   const [data, setData] = useState(false);
 
@@ -47,7 +47,7 @@ export default function FeaturedSection() {
   const doSet = (e) => setCity(e.target.innerText);
 
   return (
-    <section className="FeaturedSection">
+    <section className="NearRestoSection">
       <Container>
         <Row className="justify-content-between">
           <Col md={4}>

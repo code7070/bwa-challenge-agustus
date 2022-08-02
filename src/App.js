@@ -2,7 +2,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import Header from "./components/header/Header";
 import BenefitSection from "./sections/benefit/BenefitSection";
-import FeaturedSection from "./sections/featuread/FeaturedSection";
+import FeaturedResto from "./sections/featured/FeaturedResto";
+import NearRestoSection from "./sections/nearResto/NearRestoSection";
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
       <Header />
       <main>
         <BenefitSection />
-        <FeaturedSection />
+        <FeaturedResto />
+        <NearRestoSection />
       </main>
     </div>
   );

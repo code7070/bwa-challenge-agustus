@@ -6,11 +6,15 @@
   border: none;
 }
 
+.restoInfo__section {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
 .restoInfo__rating {
   color: #ffb800;
-  margin-bottom: 4px;
   font-size: 16px;
-  font-weight: 600;
 }
 
 .restoInfo__rating-loading {
@@ -23,9 +27,6 @@
 
 .restoInfo__name {
   color: #232631;
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 4px;
 }
 
 .restoInfo__name-loading {
@@ -39,8 +40,6 @@
 
 .restoInfo__priceRange {
   color: #656565;
-  font-weight: 600;
-  font-size: 18px;
 }
 
 .restoInfo__priceRange-loading {
@@ -49,4 +48,9 @@
   width: 250px;
   height: 20px;
   opacity: 0.5;
+}
+
+.restoInfo__loc {
+  color: #656565;
+  font-weight: 400;
 }

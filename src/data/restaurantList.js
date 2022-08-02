@@ -74,10 +74,9 @@ const restaurantList = [
   },
   {
     name: "Bind Balorant",
-    rating: {
-      star: 5,
-      userAmount: 7600,
-    },
+    isFeatured: 1,
+    rating: 5,
+    reviewedBy: 7600,
     price: {
       bottom: 35000,
       top: 529000,
