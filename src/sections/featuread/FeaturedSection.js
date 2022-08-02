@@ -14,10 +14,35 @@ import {
 import ButtonYellow from "../../components/button/ButtonYellow";
 import HeadSection from "../../components/headSection/HeadSection";
 import "./FeaturedSection.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import RestoCard from "../../components/restoCard/RestoCard";
+import restaurantList from "../../data/restaurantList";
+
+const CardLoading = () => {
+  return (
+    <Stack direction="horizontal" gap={4}>
+      <RestoCard loading />
+      <RestoCard loading />
+      <RestoCard loading />
+    </Stack>
+  );
+};
 
 export default function FeaturedSection() {
   const [city, setCity] = useState("Jakarta, Indonesia");
+  const [data, setData] = useState(false);
+
+  useEffect(() => {
+    const list = restaurantList;
+    setData(false);
+    if (city) {
+      const lists = list.filter(
+        ({ location: loc }) => `${loc.city}, ${loc.country}` === city
+      );
+      console.log("list: ", lists);
+      setTimeout(setData, 2000, lists.slice(0, 3));
+    }
+  }, [city]);
 
   const doSet = (e) => setCity(e.target.innerText);
 
@@ -36,10 +61,7 @@ export default function FeaturedSection() {
             <DropdownButton
               variant="secondary"
               className="selectCity"
-              onClick={(e) => {
-                console.log("Select: ", e.target.innerText);
-                doSet(e);
-              }}
+              onClick={doSet}
               title={
                 <Stack direction="horizontal" gap={3}>
                   <FontAwesomeIcon icon={faLocationDot} />
@@ -53,6 +75,17 @@ export default function FeaturedSection() {
               <Dropdown.Item>Bandung, Indonesia</Dropdown.Item>
             </DropdownButton>
           </Col>
+        </Row>
+        <Row className="mt-5 mb-5">
+          {data ? (
+            <Stack direction="horizontal" gap={4}>
+              {data.map((resto) => (
+                <RestoCard data={resto} />
+              ))}
+            </Stack>
+          ) : (
+            <CardLoading />
+          )}
         </Row>
         <Row>
           <Col md={4} />
