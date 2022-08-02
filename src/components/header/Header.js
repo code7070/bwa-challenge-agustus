@@ -39,8 +39,6 @@ export default function Header() {
   const { pathname } = useLocation();
   const navigate = useNavigate();
 
-  console.log({ activeKey: pathname });
-
   return (
     <div className="with-space">
       <Container>

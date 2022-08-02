@@ -44,7 +44,7 @@ const BenefitCard = ({ title, description, icon, url }) => {
           <Card.Title>{title}</Card.Title>
           <Card.Text>{description}</Card.Text>
         </Card.Body>
-        <Card.Footer as={Nav.Link} href={url}>
+        <Card.Footer href={url}>
           <div>View Details</div>
           <div className="details-arrow">
             <ChevronRightIcon />

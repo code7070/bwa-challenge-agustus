@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Container, Stack } from "react-bootstrap";
+import ButtonYellow from "../../components/button/ButtonYellow";
 import HeadSection from "../../components/headSection/HeadSection";
 import RestoCard from "../../components/restoCard/RestoCard";
 import restaurantList from "../../data/restaurantList";
@@ -11,6 +12,14 @@ const Loading = () => (
     <RestoCard />
   </Stack>
 );
+
+const CardItem = ({ sel, set, index, item }) => {
+  const doHover = () => set(index);
+  const mode = index === sel ? "featured" : "lean";
+  return (
+    <RestoCard key={item.name} data={item} mode={mode} onHover={doHover} />
+  );
+};
 
 export default function FeaturedResto() {
   const [selected, setSelected] = useState(0);
@@ -32,19 +41,31 @@ export default function FeaturedResto() {
           <div>
             <HeadSection
               align="left"
-              title="Most Popular Restaurants"
-              subtitle="TOP 3 FEATURED RESTAURANT"
+              title="TOP 3 FEATURED RESTAURANT"
+              subtitle="Most Popular Restaurants"
             />
+            <div className="featured-story my-4 mb-5">
+              The best restaurant in our opinion is how much customers like it
+              in terms of place, price, comfort and of course the taste of the
+              food itself.
+            </div>
+            <ButtonYellow>View All Restaurant</ButtonYellow>
           </div>
-          <div>
+          <Stack direction="horizontal" gap={3}>
             {data ? (
-              data.map((item) => (
-                <RestoCard key={item.name} data={item} mode="featured" />
+              data.map((item, index) => (
+                <CardItem
+                  key={item.name}
+                  item={item}
+                  set={setSelected}
+                  sel={selected}
+                  index={index}
+                />
               ))
             ) : (
               <Loading />
             )}
-          </div>
+          </Stack>
         </Stack>
       </Container>
     </section>

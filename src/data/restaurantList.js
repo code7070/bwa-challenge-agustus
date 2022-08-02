@@ -1,7 +1,7 @@
 const restaurantList = [
   {
     name: "Batavia Restaurant",
-    rating: 5,
+    rating: "5.0",
     reviewedBy: 6650,
     price: {
       bottom: 29000,
@@ -19,7 +19,7 @@ const restaurantList = [
   },
   {
     name: "Split Ascent Restaurant",
-    rating: 5,
+    rating: "5.0",
     reviewedBy: 3620,
     price: {
       bottom: 49999,
@@ -37,7 +37,7 @@ const restaurantList = [
   },
   {
     name: "Daza Fracture Restaurant",
-    rating: 5,
+    rating: "5.0",
     reviewedBy: 3620,
     price: {
       bottom: 49999,
@@ -55,7 +55,7 @@ const restaurantList = [
   },
   {
     name: "Padang Restaurant",
-    rating: 5,
+    rating: "5.0",
     reviewedBy: 5215,
     sponsored: true,
     price: {
@@ -75,7 +75,7 @@ const restaurantList = [
   {
     name: "Bind Balorant",
     isFeatured: 1,
-    rating: 5,
+    rating: "5.0",
     reviewedBy: 7600,
     price: {
       bottom: 35000,
@@ -90,6 +90,44 @@ const restaurantList = [
       cost: 0,
     },
     image: "bind-balorant.jpg",
+  },
+  {
+    name: "Pearl Dolphin",
+    isFeatured: 1,
+    rating: "4.8",
+    reviewedBy: 7600,
+    price: {
+      bottom: 35000,
+      top: 529000,
+    },
+    location: {
+      city: "Jakarta",
+      country: "Indonesia",
+    },
+    reservation: {
+      available: false,
+      cost: 0,
+    },
+    image: "pearl-dolphin.jpg",
+  },
+  {
+    name: "Pizza Summer",
+    isFeatured: 1,
+    rating: "4.7",
+    reviewedBy: 7600,
+    price: {
+      bottom: 35000,
+      top: 529000,
+    },
+    location: {
+      city: "Jakarta",
+      country: "Indonesia",
+    },
+    reservation: {
+      available: false,
+      cost: 0,
+    },
+    image: "pizza-summer.jpg",
   },
 ];
 

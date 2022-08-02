@@ -2,3 +2,9 @@
   position: relative;
   margin-bottom: 120px;
 }
+
+.FeaturedResto .featured-story {
+  font-size: 16px;
+  color: #656565;
+  width: calc(100% - 35px);
+}

@@ -4,6 +4,7 @@
   border-radius: 12px;
   padding: 24px;
   border: none;
+  transition: all 0.25s ease-in-out;
 }
 
 .restoInfo__section {
@@ -53,4 +54,8 @@
 .restoInfo__loc {
   color: #656565;
   font-weight: 400;
+}
+
+.restoInfo.lean {
+  opacity: 0;
 }

@@ -39,7 +39,6 @@ export default function NearRestoSection() {
       const lists = list.filter(
         ({ location: loc }) => `${loc.city}, ${loc.country}` === city
       );
-      console.log("list: ", lists);
       setTimeout(setData, 2000, lists.slice(0, 3));
     }
   }, [city]);
@@ -80,7 +79,7 @@ export default function NearRestoSection() {
           {data ? (
             <Stack direction="horizontal" gap={4}>
               {data.map((resto) => (
-                <RestoCard data={resto} />
+                <RestoCard key={resto.name} data={resto} />
               ))}
             </Stack>
           ) : (

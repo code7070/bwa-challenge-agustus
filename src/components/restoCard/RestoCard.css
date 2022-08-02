@@ -8,6 +8,7 @@
   border-radius: 24px;
   border: none;
   flex-direction: column;
+  transition: 0.25s ease-in-out;
 }
 
 .restoCard__image {
@@ -27,4 +28,25 @@
 
 .restoCard__info {
   margin: 24px;
+  transition: all 0.25s ease-in-out;
+}
+
+:root {
+  --width-featured: 400px;
+}
+
+.restoCard.featured {
+  cursor: pointer;
+  width: var(--width-featured);
+}
+
+.restoCard.lean {
+  cursor: pointer;
+  width: 214px;
+}
+
+.restoCard.lean .restoCard__info {
+  width: calc(var(--width-featured) - 48px);
+  transform: translate(-200%, 0);
+  opacity: 0;
 }
