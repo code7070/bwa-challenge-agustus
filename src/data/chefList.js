@@ -10,6 +10,7 @@ const chefList = [
       years: 12,
     },
     workAt: "Pearl Dolphin",
+    photo: "phoenix-satcheup.jpg",
   },
   {
     name: "Chamber Botfrag",
@@ -19,9 +20,10 @@ const chefList = [
     },
     chefType: "Vegan",
     experience: {
-      years: 12,
+      years: 3,
     },
-    workAt: "Pearl Dolphin",
+    workAt: "Bind Balorant",
+    photo: "dady-chamber.jpg",
   },
   {
     name: "Asep Vandal",
@@ -31,9 +33,9 @@ const chefList = [
     },
     chefType: "Roast Chicken",
     experience: {
-      years: 12,
+      years: 0,
     },
-    workAt: "Pearl Dolphin",
+    photo: "phoenix-satcheup.jpg",
   },
   {
     name: "I Made Invoker",
@@ -43,9 +45,10 @@ const chefList = [
     },
     chefType: "Beef Steak",
     experience: {
-      years: 12,
+      years: 7,
     },
-    workAt: "Pearl Dolphin",
+    workAt: "Batavia Restaurant",
+    photo: "invoker.jpg",
   },
   {
     name: "Abdul Muis",
@@ -58,6 +61,7 @@ const chefList = [
       years: 4,
     },
     workAt: "Padang Restaurant",
+    photo: "abdul-muis.jpg",
   },
 ];
 

@@ -1,10 +1,10 @@
 .headSection {
   position: relative;
-  text-align: center;
+  text-align: left;
 }
 
-.headSection.align-left {
-  text-align: left;
+.headSection.align-center {
+  text-align: center;
 }
 
 .headSection * {

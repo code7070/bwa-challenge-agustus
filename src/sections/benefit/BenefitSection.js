@@ -63,6 +63,7 @@ export default function BenefitSection() {
           <HeadSection
             title="Why Should Choose Us?"
             subtitle="SPECIAL BENEFIT FOR YOU"
+            align="center"
           />
         </div>
         <div className="benefit__point">

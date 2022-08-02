@@ -1,0 +1,86 @@
+.ChefProfile {
+  position: relative;
+}
+
+.ChefProfile .cp__photo {
+  width: 540px;
+  height: 840px;
+  position: relative;
+  margin: 0 auto;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.ChefProfile .cp__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ChefProfile .cp__info {
+  position: absolute;
+  border-radius: 24px;
+  border: none;
+  background: #fff;
+  overflow: hidden;
+}
+
+.ChefProfile .cp__experience {
+  top: 40px;
+  right: 0;
+  width: 179px;
+  height: 203px;
+}
+
+.ChefProfile .cp__experience .card-body {
+  padding: 30px;
+  text-align: center;
+}
+
+.ChefProfile .cp__experience .cp__exp-time {
+  margin-top: 12px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.ChefProfile .cp__experience .cp__exp-timeUnit {
+  font-weight: 400;
+}
+
+.ChefProfile .cp__work {
+  bottom: 40px;
+  left: 0;
+  width: 330px;
+  height: 180px;
+}
+
+.ChefProfile .cp__work .card-body {
+  padding: 24px;
+}
+
+.ChefProfile .cp__work .cpw__photo {
+  position: relative;
+  border-radius: 12px;
+  width: 96px;
+  height: 132px;
+  overflow: hidden;
+  margin-right: 12px;
+}
+
+.ChefProfile .cp__work .cpw__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ChefProfile .cp__work .cpw__at {
+  color: #656565;
+  font-weight: 400;
+  margin-bottom: 4px;
+}
+
+.ChefProfile .cp__work .cpw__name {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 24px;
+}
