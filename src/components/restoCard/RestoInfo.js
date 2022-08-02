@@ -1,4 +1,8 @@
-import { faArrowRight, faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import {
+  faArrowRight,
+  faLocationDot,
+  faStar,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Button, Card, Spinner, Stack } from "react-bootstrap";
 import "./RestoInfo.css";
@@ -9,7 +13,15 @@ const convert = (num = 0) =>
 const RestoRating = ({ data }) => {
   let rating = <Spinner animation="grow" variant="warning" />;
   if (data && data.rating) rating = data.rating;
-  return <div className="restoInfo__section restoInfo__rating">{rating}</div>;
+  const reviewCount =
+    data.reviewedBy > 1000 ? `${data.reviewedBy / 1000}K+` : data.reviewedBy;
+  return (
+    <div className="restoInfo__section restoInfo__rating">
+      <FontAwesomeIcon icon={faStar} />
+      <span>{rating}</span>
+      <span className="restoInfo__reviewed">({reviewCount})</span>
+    </div>
+  );
 };
 
 const RestoName = ({ loading, data }) => {
@@ -29,15 +41,16 @@ const RestoPrice = ({ data, mode }) => {
 };
 
 const RestoLocation = ({ data, mode }) => {
-  const { location: loc } = data;
-  const locView = `${loc.city}, ${loc.country}`;
-  if (mode === "featured" || mode === "lean")
+  const loc = data && data.location;
+  if ((loc && mode === "featured") || mode === "lean") {
+    const locView = `${loc.city}, ${loc.country}`;
     return (
       <Stack direction="horizontal" gap={2} className="restoInfo__loc">
         <FontAwesomeIcon icon={faLocationDot} />
         {locView}
       </Stack>
     );
+  }
   return "";
 };
 

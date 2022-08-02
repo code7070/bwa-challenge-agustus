@@ -120,7 +120,7 @@ const restaurantList = [
       top: 529000,
     },
     location: {
-      city: "Jakarta",
+      city: "Bali",
       country: "Indonesia",
     },
     reservation: {
