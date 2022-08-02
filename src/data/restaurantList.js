@@ -55,6 +55,7 @@ const restaurantList = [
   },
   {
     name: "Padang Restaurant",
+    isAds: 1,
     rating: "5.0",
     reviewedBy: 5215,
     sponsored: true,
