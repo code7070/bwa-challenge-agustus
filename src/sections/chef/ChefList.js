@@ -3,7 +3,7 @@ import {
   faLocationDot,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Card, Stack } from "react-bootstrap";
+import { Card, Nav, Stack } from "react-bootstrap";
 import ButtonYellow from "../../components/button/ButtonYellow";
 import HeadSection from "../../components/headSection/HeadSection";
 import chefList from "../../data/chefList";
@@ -25,7 +25,12 @@ const ChefItem = ({ name, location: loc, chefType, sel, set, index }) => {
             </Stack>
           </div>
           <div>
-            <Stack direction="horizontal" gap={2} className="chefCta">
+            <Stack
+              direction="horizontal"
+              gap={2}
+              className="chefCta"
+              as={Nav.Link}
+            >
               <span>Profile Details</span>
               <FontAwesomeIcon icon={faChevronRight} />
             </Stack>
