@@ -10,16 +10,22 @@ import "./RestoInfo.css";
 const convert = (num = 0) =>
   `${num}`.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
+const RestoReview = ({ data }) => {
+  if (!data) return "";
+  const reviewCount =
+    data.reviewedBy > 1000 ? `${data.reviewedBy / 1000}K+` : data.reviewedBy;
+
+  return <span className="restoInfo__reviewed">({reviewCount})</span>;
+};
+
 const RestoRating = ({ data }) => {
   let rating = <Spinner animation="grow" variant="warning" />;
   if (data && data.rating) rating = data.rating;
-  const reviewCount =
-    data.reviewedBy > 1000 ? `${data.reviewedBy / 1000}K+` : data.reviewedBy;
   return (
     <div className="restoInfo__section restoInfo__rating">
-      <FontAwesomeIcon icon={faStar} />
+      {data && <FontAwesomeIcon icon={faStar} />}
       <span>{rating}</span>
-      <span className="restoInfo__reviewed">({reviewCount})</span>
+      <RestoReview data={data} />
     </div>
   );
 };
