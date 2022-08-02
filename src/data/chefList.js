@@ -26,16 +26,17 @@ const chefList = [
     photo: "dady-chamber.jpg",
   },
   {
-    name: "Asep Vandal",
+    name: "Renata Moeloek",
     location: {
-      city: "Bandung",
+      city: "Bali",
       country: "Indonesia",
     },
-    chefType: "Roast Chicken",
+    chefType: "Asian Cuisine",
     experience: {
-      years: 0,
+      years: 18,
     },
-    photo: "phoenix-satcheup.jpg",
+    workAt: "Batavia Restaurant",
+    photo: "renatta-moeloek.jpg",
   },
   {
     name: "I Made Invoker",
