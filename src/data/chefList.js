@@ -51,19 +51,6 @@ const chefList = [
     workAt: "Batavia Restaurant",
     photo: "invoker.jpg",
   },
-  {
-    name: "Abdul Muis",
-    location: {
-      city: "Padang",
-      country: "Indonesia",
-    },
-    chefType: "Padang Cuisine",
-    experience: {
-      years: 4,
-    },
-    workAt: "Padang Restaurant",
-    photo: "abdul-muis.jpg",
-  },
 ];
 
 export default chefList;
