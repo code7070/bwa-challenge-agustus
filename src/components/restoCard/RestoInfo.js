@@ -2,7 +2,6 @@ import {
   faArrowRight,
   faLocationDot,
   faMoneyBill1Wave,
-  faMoneyCheckDollar,
   faStar,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
